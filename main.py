@@ -1,6 +1,7 @@
 import turtle
 import pandas
 from state import State
+from scoreboard import Scoreboard
 
 screen = turtle.Screen()
 screen.setup(830, 600)
@@ -11,6 +12,8 @@ turtle.shape(image)
 
 data = pandas.read_csv("50_states.csv")
 
+
+score_board = Scoreboard()
 
 printed_states =[]
 game_on = True
@@ -27,5 +30,6 @@ while game_on :
     print(y)
 
     name_state = State(answer_state, x, y)
+    score_board.update_score()
 
 screen.mainloop()
