@@ -1,6 +1,6 @@
 from turtle import Turtle
 ALIGN ='center'
-FONT = ('Arial', 11, 'normal')
+FONT = ('Arial', 9, 'normal')
 
 class State(Turtle):
     def __init__(self, state, x, y):
